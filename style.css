@@ -117,7 +117,7 @@ body {
   background-size: cover;
   background-repeat: none;
   overflow: hidden;
-  border-radius: 16px;
+  border-radius: 48px;
   background-position: bottom;
   padding: 56px 8px;
 }
@@ -181,11 +181,70 @@ body {
   border-radius: 6px;
 }
 
+/* services */
+
+.services {
+  padding: 16px 0;
+}
+
+.services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px
+}
+
+.services-card {
+  padding: 8px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+}
+
+.services-thomb-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  height: 280px;
+  border-radius: 48px;
+  background-color: var(--color-text-second);
+  margin: 0 auto;
+}
+
+.services-img-thomb {
+  width: 230px;
+  height: 230px;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.services-img {
+  object-fit: contain;
+  object-position: buttom;
+}
+
+.services-card-title {
+  color: var(--color-light-primary);
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 16px;
+  /* text-align: center; */
+}
+
+.services-card-text {
+  color: var(--color-primary);
+  border-radius: 8px;
+  font-size: 18px;
+  /* text-align: center; */
+}
+
 /* media */
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 375px) {
   .container {
-    max-width: 320px;
+    max-width: 375px;
   }
 }
 
@@ -225,6 +284,23 @@ body {
   .hero-text-work-time {
     font-size: 22px;
   }
+
+  .services-card {
+    flex-direction: row;
+    gap: 8px;
+    text-align: left;
+    align-items: center;
+  }
+
+  .services-card:nth-child(2) {
+    flex-direction: row-reverse;
+    text-align: right;
+  }
+
+
+  .services-card-text {
+    width: 320px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -239,5 +315,14 @@ body {
 
   .hero {
     padding: 4px 0;
+  }
+
+  .services-card-text {
+    font-size: 22px;
+  }
+
+  .services-card-text {
+    width: 420px;
+    font-size: 20px;
   }
 }
