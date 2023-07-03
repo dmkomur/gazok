@@ -21,6 +21,7 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GazOK, викликати газового майстра</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -34,7 +35,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <header id="start">
       <div class="container">
         <a href="#" class="header-logo-wrap">
           <img src="./img/flame.svg" alt="logo" class="header-logo-img" />
@@ -50,7 +51,7 @@
               Виклик газового <span>майстра</span> в місті
               <span>Дніпро</span> та околицях
             </h1>
-            <address>
+            <address data-aos="zoom-out-down">
               <ul class="hero-adress-list">
                 <li>
                   <a class="hero-adress-item" href="tel:+30981234799"
@@ -69,7 +70,7 @@
                 </li>
               </ul>
             </address>
-            <p class="hero-text-work-time">
+            <p class="hero-text-work-time" data-aos="zoom-out-up">
               ми працюємо <span>24/7</span>, за ради вашого кофморту та безпеки
             </p>
           </div>
@@ -82,7 +83,7 @@
             плит, теплий пол, чистка котлов
           </h2>
           <ul class="services-list">
-            <li class="services-card">
+            <li class="services-card" data-aos="fade-right">
               <div class="services-thomb-wrap">
                 <div class="services-img-thomb">
                   <img
@@ -102,7 +103,7 @@
                 </p>
               </div>
             </li>
-            <li class="services-card">
+            <li class="services-card" data-aos="fade-left">
               <div class="services-thomb-wrap">
                 <div class="services-img-thomb">
                   <img
@@ -119,7 +120,7 @@
                 </p>
               </div>
             </li>
-            <li class="services-card">
+            <li class="services-card" data-aos="fade-right">
               <div class="services-thomb-wrap">
                 <div class="services-img-thomb">
                   <img
@@ -140,6 +141,41 @@
           </ul>
         </div>
       </section>
+      <section class="advantages">
+        <div class="container">
+          <h2 class="advantages-title">
+            Чому кращє викликати нашого <span>майстра</span> ?
+          </h2>
+          <div class="advantages-content-wrap">
+            <ul class="advantages-list" data-aos="fade-left">
+              <li class="advantages-item">Досід роботи понад 10 років</li>
+              <li class="advantages-item">Ліцензія на обслуговування</li>
+              <li class="advantages-item">Швидка робота</li>
+              <li class="advantages-item">Ремонт під ключ</li>
+              <li class="advantages-item">Супровідні послуги та ремонти</li>
+              <li class="advantages-item">Лояльність до постійних клієнтів</li>
+            </ul>
+            <div class="advantages-img-thumb" data-aos="fade-up">
+              <img
+                src="./img/kitchen.jpg"
+                alt="master"
+                class="advantages-img"
+              />
+            </div>
+          </div>
+          <a
+            href="#start"
+            class="advantages-btn"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            >До початку
+          </a>
+        </div>
+      </section>
     </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
