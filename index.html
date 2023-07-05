@@ -2,7 +2,8 @@
 <html lang="uk">
   <head>
     <meta charset="UTF-8" />
-    <link
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
+    <!-- <link
       rel="apple-touch-icon"
       sizes="180x180"
       href="img/apple-touch-icon.png"
@@ -18,7 +19,7 @@
       type="image/png"
       sizes="16x16"
       href="img/favicon-16x16.png"
-    />
+    /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GazOK, викликати газового майстра</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -38,22 +39,17 @@
     <header id="start">
       <div class="container header">
         <a href="#start" class="header-logo-wrap">
-          <img src="./img/flame.svg" alt="logo" class="header-logo-img" />
+          <svg width="32" height="32" class="header-social-icon">
+            <use href="./img/symbol.svg#icon-flame"></use>
+          </svg>
           <p class="header-logo-text">Gaz<span>ok</span></p>
         </a>
         <ul class="header-social">
           <li>
-            <a
-              href="node_modules/modern-normalize/modern-normalize.css"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><img
-                class=".header-social-icon"
-                src="./img/instagram.svg"
-                alt="instagram лого"
-                width="32"
-                height="32"
-            /></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"
+              ><svg width="32" height="32" class="header-social-icon">
+                <use href="./img/symbol.svg#icon-viber"></use></svg
+            ></a>
           </li>
           <li>
             <a
@@ -61,15 +57,8 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              <!-- <img
-                class=".header-social-icon"
-                src="./img/viber.svg"
-                alt="viber лого"
-                width="32"
-                height="32"
-              /> -->
               <svg width="32" height="32" class="header-social-icon">
-                <use href="./img/instagram.svg"></use>
+                <use href="./img/symbol.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
@@ -160,6 +149,8 @@
                     class="services-img"
                     src="./img/boiler1x.jpg"
                     alt="Ремонт обладнання"
+                    width="230"
+                    height="230"
                   />
                 </div>
               </div>
@@ -181,6 +172,8 @@
                     class="services-img"
                     src="./img/floor1x.jpg"
                     alt="Тепла підлога"
+                    width="230"
+                    height="230"
                   />
                 </div>
               </div>
@@ -199,6 +192,8 @@
                     class="services-img"
                     src="./img/kitchen1x.jpg"
                     alt="Кухня"
+                    width="230"
+                    height="230"
                   />
                 </div>
               </div>
@@ -234,6 +229,8 @@
                 alt="Майстер"
                 class="advantages-img"
                 loading="lazy"
+                width="375"
+                height="400"
               />
             </div>
           </div>

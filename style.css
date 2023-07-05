@@ -138,8 +138,12 @@ body {
 }
 
 .header-social-icon {
-  stroke: var(--color-accent);
   fill: var(--color-accent);
+}
+
+.header-social-icon:hover,
+.header-social-icon:focus {
+  fill: var(--color-light-primary)
 }
 
 .header-logo-text {
