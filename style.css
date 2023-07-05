@@ -126,6 +126,22 @@ body {
 }
 
 /* header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-social {
+  display: flex;
+  gap: 20px;
+}
+
+.header-social-icon {
+  stroke: var(--color-accent);
+  fill: var(--color-accent);
+}
+
 .header-logo-text {
   font-size: 28px;
   font-weight: 700;
