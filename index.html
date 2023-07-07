@@ -36,7 +36,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header id="start" class="header">
+    <header class="header">
       <div class="container header-wrap">
         <a href="#start" class="header-logo-wrap">
           <svg width="32" height="32" class="header-logo">
@@ -73,7 +73,7 @@
       </div>
     </header>
     <main>
-      <section class="hero">
+      <section class="hero" id="start">
         <div class="container">
           <div class="hero-wrap firepit">
             <div class="spark"></div>
@@ -92,7 +92,7 @@
               Виклик газового <span>майстра</span> в місті
               <span>Дніпро</span> та околицях
             </h1>
-            <address data-aos="zoom-out-down">
+            <address data-aos="flip-right">
               <ul class="hero-adress-list">
                 <li>
                   <a class="hero-adress-item" href="tel:+380981234799"
@@ -111,7 +111,11 @@
                 </li>
               </ul>
             </address>
-            <p class="hero-text-work-time" data-aos="zoom-out-up">
+            <p
+              class="hero-text-work-time"
+              data-aos="flip-left"
+              data-aos-delay="200"
+            >
               Ми працюємо <span>24/7</span>, за ради вашого кофморту та безпеки
             </p>
           </div>
@@ -122,21 +126,17 @@
           <div class="services-wrap">
             <p
               class="services-label"
-              data-aos="zoom-in-up"
+              data-aos="flip-right"
               data-aos-delay="250"
             >
               Відремонтовано понад <span>1700+</span> одиниці техніки
             </p>
-            <p
-              class="services-label"
-              data-aos="zoom-in-up"
-              data-aos-delay="300"
-            >
+            <p class="services-label" data-aos="flip-left" data-aos-delay="300">
               Успішно завершено <span>90+</span> проєктів
             </p>
             <p
               class="services-label"
-              data-aos="zoom-in-up"
+              data-aos="flip-right"
               data-aos-delay="350"
             >
               <span>300+</span> Постійних клієнтів
@@ -148,7 +148,7 @@
             плит, теплий пол, чистка котлов
           </h2>
           <ul class="services-list">
-            <li class="services-card" data-aos="fade-right">
+            <li class="services-card" data-aos="flip-right">
               <div class="services-thomb-wrap">
                 <div class="services-img-thomb">
                   <img
@@ -171,7 +171,7 @@
                 </p>
               </div>
             </li>
-            <li class="services-card" data-aos="fade-left">
+            <li class="services-card" data-aos="flip-left">
               <div class="services-thomb-wrap">
                 <div class="services-img-thomb">
                   <img
@@ -191,7 +191,7 @@
                 </p>
               </div>
             </li>
-            <li class="services-card" data-aos="fade-right">
+            <li class="services-card" data-aos="flip-right">
               <div class="services-thomb-wrap">
                 <div class="services-img-thomb">
                   <img
@@ -221,7 +221,7 @@
             Чому краще викликати нашого <span>майстра</span> ?
           </h2>
           <div class="advantages-content-wrap">
-            <ul class="advantages-list" data-aos="fade-left">
+            <ul class="advantages-list" data-aos="flip-left">
               <li class="advantages-item">Досвід роботи понад 10 років</li>
               <li class="advantages-item">Ліцензія на обслуговування</li>
               <li class="advantages-item">Швидка та якісна робота</li>
@@ -229,7 +229,7 @@
               <li class="advantages-item">Супровідні послуги та ремонти</li>
               <li class="advantages-item">Лояльність до постійних клієнтів</li>
             </ul>
-            <div class="advantages-img-thumb" data-aos="fade-up">
+            <div class="advantages-img-thumb" data-aos="flip-right">
               <img
                 srcset="./img/master1x.jpg 1x, ./img/master2x.jpg 2x"
                 src="./img/master1x.jpg"
@@ -241,13 +241,9 @@
               />
             </div>
           </div>
-          <a
-            href="#start"
-            class="advantages-btn"
-            data-aos="fade-up"
-            data-aos-delay="300"
-            >До початку
-          </a>
+          <div data-aos="flip-right" data-aos-delay="300">
+            <a href="#start" class="advantages-btn">До початку </a>
+          </div>
         </div>
       </section>
     </main>
