@@ -126,7 +126,18 @@ body {
 }
 
 /* header */
+
 .header {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  background-color: var(--color-text-dark);
+  padding: 8px;
+  width: 100%;
+}
+
+.header-wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -139,12 +150,38 @@ body {
 
 .header-social-icon {
   fill: var(--color-accent);
+  transition: all 250ms linear;
+}
+
+.header-viber-icon {
+  stroke: var(--color-accent);
+  transition: all 250ms linear;
 }
 
 .header-social-icon:hover,
 .header-social-icon:focus {
   fill: var(--color-light-primary)
 }
+
+.header-viber-icon:hover,
+.header-viber-icon:hover:focus {
+  stroke: var(--color-light-primary);
+}
+
+.header-logo-wrap:focus>.header-logo,
+.header-logo-wrap:hover>.header-logo {
+  fill: var(--color-accent);
+}
+
+.header-logo {
+  fill: var(--color-primary);
+  transition: all 250ms linear;
+}
+
+/* .header-logo:hover,
+.header-logo:focus {
+  fill: var(--color-accent);
+} */
 
 .header-logo-text {
   font-size: 28px;
@@ -172,7 +209,7 @@ body {
 
 /* hero */
 .hero {
-  padding: 8px 0;
+  padding-top: 60px;
 }
 
 .firepit {
@@ -305,7 +342,7 @@ body {
   text-align: center;
   font-weight: 700;
   font-size: 24px;
-  transition: all --transition-type --transition-time;
+  transition: all 250ms linear;
 }
 
 .hero-adress-item::before {
@@ -524,6 +561,10 @@ body {
     padding: 0 20px;
   }
 
+  .header {
+    padding: 8px 0px;
+  }
+
   .hero-wrap {
     background-position: center;
     padding: 96px 32px;
@@ -606,12 +647,16 @@ body {
     max-width: 1200px;
   }
 
+  .header {
+    padding: 8px 0px;
+  }
+
   .hero-text-work-time {
     padding-top: 16px;
   }
 
   .hero {
-    padding: 4px 0;
+    padding-top: 60px;
   }
 
   .services-wrap {
